@@ -419,3 +419,7 @@ button {
     margin-left: 16px;
   }
 }
+.custom-thumb {
+  width: 82px;
+  height: 82px;
+}
