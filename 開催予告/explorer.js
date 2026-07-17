@@ -4,6 +4,9 @@ const openFolderButton = document.getElementById("open-folder");
 const openFestivalFileButton = document.getElementById("open-festival-file");
 const openWitnessFileButton = document.getElementById("open-witness-file");
 const openScpFileButton = document.getElementById("open-scp-file");
+const openAchievementFileButton = document.getElementById("open-achievement-file");
+const openIllusionFileButton = document.getElementById("open-illusion-file");
+
 const sidebarFolderButton = document.getElementById("sidebar-folder");
 const folderView = document.getElementById("folder-view");
 const fileView = document.getElementById("file-view");
@@ -22,6 +25,14 @@ const previewMap = {
   scp: {
     src: "./アイコン3_SCP.png",
     alt: "SCP文書",
+  },
+  achievement: {
+    src: "./アイコン4_開催予告実績.png",
+    alt: "開催予告実績",
+  },
+  illusion: {
+    src: "./アイコン5_開催予告錯覚.png",
+    alt: "開催予告錯覚",
   },
 };
 
@@ -76,6 +87,9 @@ openFolderButton.addEventListener("click", () => navigateTo({ type: "files" }));
 openFestivalFileButton.addEventListener("click", () => navigateTo({ type: "preview", previewKey: "festival" }));
 openWitnessFileButton.addEventListener("click", () => navigateTo({ type: "preview", previewKey: "witness" }));
 openScpFileButton.addEventListener("click", () => navigateTo({ type: "preview", previewKey: "scp" }));
+openAchievementFileButton.addEventListener("click", () => navigateTo({ type: "preview", previewKey: "achievement" }));
+openIllusionFileButton.addEventListener("click", () => navigateTo({ type: "preview", previewKey: "illusion" }));
+
 sidebarFolderButton.addEventListener("click", () => navigateTo({ type: "folder" }));
 backButton.addEventListener("click", goBack);
 forwardButton.addEventListener("click", goForward);
